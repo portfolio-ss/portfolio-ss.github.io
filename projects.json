@@ -1,0 +1,178 @@
+{
+  "dev": [
+    {
+      "title": "Observabilidade com Dynatrace",
+      "description": "Integração de logs e monitoramento em AWS Fargate usando Fluent Bit e FireLens.",
+      "image": "projects/dev/dynatrace.jpg",
+      "tags": [
+        "Terraform",
+        "ECS",
+        "AWS"
+      ],
+      "category": "AWS / DevOps"
+    },
+    {
+      "title": "Pipeline CI/CD CodeCatalyst",
+      "description": "Automação de deploys seguros para aplicações em containers.",
+      "image": "projects/dev/cicd-pipeline.jpg",
+      "tags": [
+        "CI/CD",
+        "Docker",
+        "AWS"
+      ],
+      "category": "Automação"
+    },
+    {
+      "title": "Landing Pages & Sites",
+      "description": "Desenvolvimento de sites responsivos com foco em performance.",
+      "image": "projects/dev/landing-pages.jpg",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "category": "Web Dev"
+    }
+  ],
+  "design": [
+    {
+      "title": "Artes para redes sociais",
+      "description": "Estratégia visual para Instagram e eventos.",
+      "image": "projects/design/artes/constelacao.png",
+      "projects": [
+        {
+          "title": "Constelação Familiar",
+          "images": [
+            "projects/design/artes/constelacao.png"
+          ]
+        },
+        {
+          "title": "Arrastão Solidário DeMolay",
+          "images": [
+            "projects/design/artes/Arrastao1.png",
+            "projects/design/artes/Arrastao2 copy.png",
+            "projects/design/artes/Arrastao3.png",
+            "projects/design/artes/Arrastao4.png"
+          ]
+        },
+        {
+          "title": "Arrastão Solidário DeMolay 2° Edição",
+          "images": [
+            "projects/design/artes/arrastao1.jpg",
+            "projects/design/artes/arrastao2.png",
+            "projects/design/artes/arrastao3.jpg"
+          ]
+        },
+        {
+          "title": "Cardápio",
+          "images": [
+            "projects/design/artes/cardapio.png",
+            "projects/design/artes/cardapio1.png",
+            "projects/design/artes/cardapio2.png"
+          ]
+        },
+        {
+          "title": "Datas Comemorativas",
+          "images": [
+            "projects/design/artes/diadascriancas.png",
+            "projects/design/artes/diadodemolay.png",
+            "projects/design/artes/visitanatalina.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizados & Brindes",
+      "description": "Estampas para canecas, camisetas e blusas.",
+      "image": "projects/design/produtos/DonnaDoceadesivo.png",
+      "projects": [
+        {
+          "title": "Donna Doce",
+          "images": [
+            "projects/design/produtos/DonnaDoceadesivo.png",
+            "projects/design/produtos/DonnaDoceetiqueta.png"
+          ]
+        },
+        {
+          "title": "LittleDreams",
+          "images": [
+            "projects/design/produtos/littledreams.png",
+            "projects/design/produtos/littledreams1.png",
+            "projects/design/produtos/littledreams2.png"
+          ]
+        },
+        {
+          "title": "Itens de formatura",
+          "images": [
+            "projects/design/produtos/adesivo farmacia.jpg",
+            "projects/design/produtos/caneca farmacia.png"
+          ]
+        },
+        {
+          "title": "Produtos em geral",
+          "images": [
+            "projects/design/produtos/samba computacao.png",
+            "projects/design/produtos/moletomcomp.png",
+            "projects/design/produtos/garrafa.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Identidade para Eventos",
+      "description": "Convites e artes para eventos sazonais.",
+      "image": "projects/design/identidadefestas/convitemcjp.png",
+      "projects": [
+        {
+          "title": "Aniversário Maria Clara e JP",
+          "images": [
+            "projects/design/identidadefestas/adesivocompridomcjp.png",
+            "projects/design/identidadefestas/adesivomcjp.png",
+            "projects/design/identidadefestas/convitemcjp.png"
+          ]
+        },
+        {
+          "title": "Aniversário Fazendinha",
+          "images": [
+            "projects/design/identidadefestas/adesivofazendinha.png",
+            "projects/design/identidadefestas/adesivosfazendinha.png",
+            "projects/design/identidadefestas/convitefazendinha.png"
+          ]
+        },
+        {
+          "title": "Convites em geral",
+          "images": [
+            "projects/design/identidadefestas/16doRafael.png",
+            "projects/design/identidadefestas/vojaime.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Logos",
+      "description": "Logos para todos os tipos de clientes.",
+      "image": "projects/design/logos/logocolegio.png",
+      "projects": [
+        {
+          "title": "Organização filantrópica",
+          "images": [
+            "projects/design/logos/logocolegio.png",
+            "projects/design/logos/logodecimaquinta.png"
+          ]
+        },
+        {
+          "title": "Segflex Conveniência",
+          "images": [
+            "projects/design/logos/logosegflex.png"
+          ]
+        },
+        {
+          "title": "LittleDreams",
+          "images": [
+            "projects/design/logos/littledreams.png"
+          ]
+        }
+      ]
+    }
+  ]
+}
