@@ -12,20 +12,29 @@
     });
 
     // --- Mobile menu toggle ---
-    const menuBtn = document.querySelector('.nav-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
+    const menuBtn = document.querySelector('#menuBtn');
+    const mobileMenu = document.querySelector('#mobileMenu');
 
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            menuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('open');
+            menuBtn.textContent = mobileMenu.classList.contains('open') ? '✕' : '☰';
         });
 
-        navLinks.querySelectorAll('a').forEach(link => {
+        mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
+                mobileMenu.classList.remove('open');
                 menuBtn.textContent = '☰';
             });
+        });
+
+        // Fecha ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && e.target !== menuBtn) {
+                mobileMenu.classList.remove('open');
+                menuBtn.textContent = '☰';
+            }
         });
     }
 

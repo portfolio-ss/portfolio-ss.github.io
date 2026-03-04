@@ -162,11 +162,83 @@ body::before {
 .nav-menu-btn {
     display: none;
     background: none;
-    border: none;
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-sm);
     color: var(--text-primary);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
-    padding: 4px;
+    padding: 6px 10px;
+    z-index: 200;
+    transition: all var(--transition-fast);
+}
+
+.nav-menu-btn:hover {
+    background: var(--bg-card);
+    border-color: var(--accent);
+}
+
+/* --- Mobile Nav --- */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Esconde nav-links desktop no mobile */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Dropdown mobile independente */
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 68px;
+        right: 16px;
+        background: rgba(18, 18, 26, 0.97);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 12px;
+        padding: 6px;
+        gap: 2px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        opacity: 0;
+        transform: translateY(-8px) scale(0.95);
+        transform-origin: top right;
+        pointer-events: none;
+        transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+
+    .mobile-menu.open {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: all;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px 18px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgba(240, 240, 245, 0.7);
+        border-radius: 8px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: all 0.15s ease;
+    }
+
+    .mobile-menu a:hover {
+        color: #f0f0f5;
+        background: rgba(255, 255, 255, 0.07);
+    }
 }
 
 /* --- Hero --- */
